@@ -1,0 +1,228 @@
+nav{
+    position: fixed;
+    height: 100%;
+    left: 0;
+}
+nav #logo{
+    width: 20%;
+    height: 10%;
+    margin-left: 10px;
+}
+nav ul{
+    list-style-type: none;
+    line-height: 28px;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li.child6 a{
+    color: #000000;
+    opacity: 1; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.7;
+    font-size: small;
+    font-weight: 400;
+}
+nav ul li a:hover{
+    background-color: transparent;
+    color: #8b0000;
+}
+@media only screen and (max-width: 900){
+    nav{
+        position: fixed;
+        height: 100%;
+        left: 0;
+    }
+    nav #logo{
+        width: 8%;
+        height: 4%;
+        margin-left: 5px;
+    }
+    nav ul{
+        list-style-type: none;
+        line-height: 10px;
+    }
+    
+    nav ul li{
+        position: relative;
+    }
+    
+    nav ul li.child6 a{
+        color: #000000;
+        opacity: 1; 
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #000000;
+        opacity: 0.7;
+        font-size: small;
+        font-weight: 400;
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+        color: #8b0000;
+}
+}
+#sub-nav1 ul{
+    list-style-type: none;
+    /* padding-top: 0; */
+    /* padding-left: 15px; */
+}
+
+#sub-nav1 ul li a{
+    text-decoration: none;
+    color: #000000;
+    opacity: 2;
+    font-size: small;
+    font-weight: 520;
+}
+#sub-nav1 ul li a:hover{
+    background-color: transparent;
+    color: #8b0000;
+}
+
+.fa-instagram, .fa-linkedin,.fa-behance, .fa-facebook{
+    padding: 5px 5px;
+}
+#iconList{
+    padding-left: 35px;
+}
+#iconList a{
+    color: #000000;
+}
+
+/* <image section> */
+.container{
+    padding-top: 20px;
+    margin: auto;
+    width: 80%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+} 
+div.img1 img{
+    width: 300px;
+    height: 180px;
+}
+.container #sub-img{
+    box-shadow: 0.3rem 0.4rem 0.4rem rgb(0,0,0, 0.4);
+    transition: transform .4s ease-out;
+    object-fit: cover;
+}
+.container #sub-img{
+    transform: scale(1);
+}
+div.img2 img{
+    width: 300px;
+    height: 180px;
+}
+div.img3 img{
+    width: 300px;
+    height: 180px;
+}
+div.img4 img{
+    width: 300px;
+    height: 180px;
+}
+div.img5 img{
+    width: 300px;
+    height: 180px;
+}
+div.img6 img{
+   width: 300px;
+    height: 180px;
+}
+div.img7 img{
+    /* padding-bottom: 20px; */
+     width: 300px;
+    height: 180px;
+}
+div.img8 img{
+     width: 300px;
+    height: 180px;
+}
+div.img9 img{
+    width: 300px;
+    height: 180px;
+}
+div.img10 img{
+    width: 300px;
+    height: 180px;
+}
+div.img11 img{
+     width: 300px;
+    height: 180px;
+}
+div.img12 img{
+    width: 300px;
+    height: 180px;
+}
+
+@media (max-width: 768px){
+    .container{
+        padding-top: 20px;
+        margin: auto;
+        width: 80%;
+        float: right;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    div.img1 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img2 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img3 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img4 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img5 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img6 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img7 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img8 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img9 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img10 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img11 img{
+        width: 150px;
+        height: 90px;
+    }
+    div.img12 img{
+        width: 150px;
+        height: 90px;
+    } 
+}

@@ -1,0 +1,191 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;    
+    overflow: hidden;
+    background-color: #8b0000;
+}
+ul.nav1{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #ffffff;
+ }
+.nav1{
+    border: 0.5px solid white;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.nav1 a{
+    color: #000000;
+}
+
+.nav1 a:hover{
+    background-color: #ffffff;
+ }
+li.nav2{
+    display: inline-flex;
+    border: 1px solid #ffffff;
+}
+ 
+.new2 a:hover {
+    background: darkred;
+    text-decoration: underline;
+}
+
+.new2 {
+    border: 1px solid #ffffff;
+}
+
+li.p1 {
+    display: inline-flex;
+}
+
+.p1 {
+    float: left;
+    border: 0.5px solid white;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.p2 a{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+a {
+    color: rgb(63, 3, 3);
+}
+
+li a {
+    color: #ddd;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: burlywood;
+    text-decoration: underline;
+}
+
+
+/*#list:last-child {
+    border: 1px solid white;
+}*/
+.button {
+    float: right;
+    padding: 0;
+    border: 1px solid white;
+    border-bottom: 0;
+    border-top: 0;
+    margin: 0;
+    background-color: #8b0000;
+    display: inline-flex;
+}
+
+.button .menu__icon a:hover{
+    background-color: #8b0000;
+}
+
+/*.menu__icon a{
+    padding: 10px 15px;
+}
+.button .menu__text{
+    text-align: center;
+}
+
+.menu__icon a:hover{
+    background-color: #deb887;
+}
+
+button.button .menu__icon {
+    padding: 10px 15px;
+    text-align: center;
+}*/
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: darkred;
+    display: inline-flex;
+    border: 1px solid #ddd;
+}
+
+div.img1 {
+    background-color: gray;
+    border: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+img.cross {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    background-color: gray;
+    width: 20px;
+    height: 25px;
+}
+
+img.adv {
+    display: block;
+    margin: auto;
+}
+
+
+img.earth {
+    margin-left: 100px;
+    width: 600px;
+    height: 400px;
+}
+
+.man {
+    width: 700px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+p {
+    margin-top: 20px;
+    margin-left: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.class__btn {
+    background: darkslategray;
+    border: 1px solid darkslategray;
+    padding: 20px 15px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.class__btn:hover {
+    background-color: red;
+}
+
+div.container a {
+    text-decoration: none;
+}
+
+div.container p {
+    margin: 0;
+    margin-bottom: 10px;
+ }
+
+button.menu{
+    background-color: red;
+    padding: 10px 10px;
+    border: 1px solid #ff0000;
+}
+
+button a:hover{
+    background-color: #ff0000;
+}
+

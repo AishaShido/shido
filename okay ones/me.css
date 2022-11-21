@@ -1,0 +1,89 @@
+body{
+    width: 100%;
+    background-image: url(nature.webp);
+    height: 100vh;
+}
+/* Uma baahni kan oo wuxuu keenin in nav bar ka hoos uu aad u aado marka style gareeyo oo padding siiyo ama border
+.parent{
+    border: 1px solid #fff; 
+   padding
+} */
+.parent p{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.parent p a{
+    color: #fff;
+    text-decoration: none;
+    transition: transform .4s;
+}
+.parent p a:hover{
+    transform: scale(1.4);
+}
+nav{
+    /* labadan line ka meeshu iigu egyahan ku calamad sanayay 
+    border: 1px solid #ffffff;
+    border-bottom: 1px solid #efefef;  */
+    width: 100%;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li{
+    /* border: 1px solid white; */
+    margin-top: 0;
+    position: relative;
+    top: 50;
+    list-style-type: none;
+    padding: 0 15px 0 20px;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    /* padding: 20px 15px 0 15px; */
+    /* border: 1px solid black; wuxu li a border geeda udhaxaysiin line nav bar yada try garey saa u aragto*/
+}
+nav ul li a:hover{
+    background-color: #ddd;
+}
+
+/* container */
+.container{
+    width: 75%;
+    margin: auto;    
+}
+#con1{
+    margin-top: 130px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+}
+h2{
+    font-size: 50px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #fff;
+}
+#icon3 p{
+    color: #fff;
+    font-size: 20px;
+}
+.btn1{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(244, 91, 116);
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 30px;
+    line-height: 70px;
+    transition: transform .4s;
+}
+.btn1:hover{
+    transform: scale(1.2);
+}
