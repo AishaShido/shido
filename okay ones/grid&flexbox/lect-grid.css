@@ -1,0 +1,99 @@
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	/* vh = vertical height */
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	/* 0 = top & bottom , 2rem 2rem  = Left & right */
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.gallery-item {
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+/* animation */
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/* CSS Grids */
+
+/* 		To achieve wrapping, we can use the auto-fit or auto-fill keywords. */
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+	grid-gap: 2rem;
+}
+
+.gallery,
+.gallery-item {
+	margin: 0;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+  }
+  footer a{
+	  text-decoration: none;
+	  background-color: #fff;
+	  font-weight: 600;
+	  color: #000;
+	  padding: 10px;
+	  margin-bottom: 10px;
+  }
+  @media screen and (max-width: 768px) {
+	footer{
+	  margin: 0 0 0.8rem 0.5rem;
+	}
+  }
