@@ -167,6 +167,10 @@ footer a{
 .icons a{
   padding: 1rem;
   color: #1c1451;
+  transition: transform .4s;
+}
+.icons a:hover{
+  transform: scale(1.2s);
 }
 @media screen and (max-width: 768px) {
   .icons{
