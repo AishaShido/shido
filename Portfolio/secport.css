@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     margin: 4vw 0 0 6vw;
-    height: 70vh;
+    height: 80vh;
 }
 .sub-sec1{
     /* border: 1px solid none; */
@@ -52,8 +52,11 @@
     justify-content: space-between;
 }
 #myimage img{
-    width: 300px;
-    height: 300px;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgb(205, 228, 255);
+  transition: transform .4s ease-out;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
 }
 .sub-sec2{
     margin: 4vw 0 0 18.5vw;
@@ -72,8 +75,12 @@
     text-decoration: none;
 }
 #journey{
-    color: #1c1451;
+    color: #000;
     text-decoration: none;
+}
+#journey:hover{
+  color: #cde4ff;
+  text-decoration: underline;
 }
 @media screen and (max-width: 768px){
   .mine{
@@ -103,13 +110,8 @@
 }
 .sub-sec3{
     margin: 6vw 0 0 0;
-    /* 
-    border: 1px solid none;
-    color: #1c1451;
-    width: 60%;
-    line-height: 25px; */
     text-align: center;
-    border: 3px solid #014fa9;
+    border: 3px solid #01326e;
     border-radius: 15px 0 15px 0;
     padding: 0.5rem 1rem 2rem 1rem;
 }
@@ -124,6 +126,7 @@
     background-color: #01326e;
     color: #fff;
     text-decoration: none;
+    border-radius: 20px;
 }
 .email-link:hover{
     background: #014fad;
@@ -165,7 +168,14 @@ footer a{
   padding: 1rem;
   color: #1c1451;
 }
-
+@media screen and (max-width: 768px) {
+  .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 0 1rem;
+  }
+}
 /* form */
 .contact{
     padding: 0px 15%;
@@ -261,11 +271,114 @@ form textarea{
 }
 
 
+/* -------------cards------------ */
+.service{
+  width: 100%;
+  /* height: 90vh; */
+  background: #b2dfff;
+  padding: 100px 0;
+}
+.service h1{
+  margin-bottom: 4%;
+  text-align: center;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.cardimg{
+  width: 300px;
+  height: 300px;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgb(0,0,0, 0.4);
+  transition: transform .4s ease-in-out;
+  object-fit: cover;
+}
+.cardimg{
+  transform: scale(1);
+
+}
+@media screen and (max-width: 800px){
+  .service{
+    width: 100%;
+    height: 200vh;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .cardimg{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* -----------about--------- */
+.about{
+  width: 100%;
+  padding: 70px 0;
+  background-color: #b1d5ff;
+}
+.about img{
+  width: 300px;
+  height: auto;
+}
+.sub-child{
+  width: 550px;
+}
+.about-m{
+  width: 1130px;
+  max-width: 95%;
+  max-width: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sub-child h2{
+  color: #000;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.sub-child h5{
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.sub-child p{
+  color: #000;
+  letter-spacing: 1px;
+  list-style: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 900px){
+  .about-m{
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-child{
+    text-align: center;
+    width: 500px;
+  }
+  .about img{
+    width: 300px;
+    height: auto;
+  }
+}
 
 /* ----------NAV BARS bitch---------- */
 
 nav{
-  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
