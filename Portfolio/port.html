@@ -1,132 +1,497 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="https://kit.fontawesome.com/5f5c40468b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="secport.css">
-</head>
-<body>      
-    <nav class="nav"> 
-        <div class="logo">
-            <h3>Aisha</h3>
-        </div>	
+body{
+    font-family: 'Grandslang roman', sans-serif;
+    background-color: #cde4ff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+}
 
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="mailto:aishashido@gmail.com" target="_blank">Contact</a></li>
-        </ul>
-        
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-      </nav>
-        
+ /* <section one> */
 
-<!---section one-->
-        
-            <!-- <video autoplay loop muted plays-inline>
-                <source src="./bosaso.mp4" type="video/mp4">
-            </video> -->
-        <section class="sec1">
-            <div class="sub-sec1">
-                <h3>Hello, my name is</h3>
-                <h1>Aisha Mahamud</h1>
-                <p id="about">I'm a full stack developer and freelancer and I previously worked as a quality assurance control and analyzer.</p>
-            </div>
-        </section>
+.sec1{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 0 0 6vw;
+    height: 80vh;
+}
+.sub-sec1{
+    /* border: 1px solid none; */
+    color: #1c1451;
+    width: 60%;
+    line-height: 25px;
+}
+.sub-sec1 h1{
+    font-size: 3rem;
+}
+.sub-sec1 h3{
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 768px){
+  .sec1{
+    width: 100%;
+    height: 80vh;
+  }
+  .sub-sec1 h3{
+    margin-top: 10px;
+  }
+ .sub-sec1 h1{
+    line-height: 45px;
+    font-size: 40px;
+ }
+}
+/* section two */
+.mine{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#myimage img{
+  box-shadow: 0.3rem 0.4rem 0.4rem rgb(205, 228, 255);
+  transition: transform .4s ease-out;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+.sub-sec2{
+    margin: 4vw 0 0 18.5vw;
+    border: 1px solid none;
+    color: #1c1451;
+    width: 60%;
+    line-height: 25px;
+}
+.sub-sec2 p{
+    width: 70%;
+    letter-spacing: 0.7px;
+}
+.ul2 ul li a{
+    color: #150089;
+    font-size: 23px;
+    text-decoration: none;
+}
+#journey{
+    color: #000;
+    text-decoration: none;
+}
+#journey:hover{
+  color: #cde4ff;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+  .mine{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .sub-sec2 p{
+    width: 100%;
+    letter-spacing: 0.7px;
+}
+#myimage img{
+  width: 250px;
+  height: 250px;
+}
+.ul2 ul li a{
+  text-align: center;
+}
+}
 
-        <div class="service">
-            <h1>Projects</h1>
-                <div class="cards">
-                    <div class="card">
-                        <a href="https://ayyshahh1.github.io/shido/okay%20ones/box/flexbox.html" target="_blank"><img class="cardimg" src="sky.jpg"></a>
-                    </div>
-                    <div class="card">
-                        <a href="https://ayyshahh1.github.io/shido/okay%20ones/grid&flexbox/lecture-grid.html" target="_blank"><img class="cardimg" src="sea.jpg"></a>
-                    </div>
-                    <div class="card">
-                        <a href="https://product-based-template-43261765f7745e71.webflow.io/" target="_blank"><img class="cardimg" src="sunset.jpg"></a>
-                    </div>
-            </div>
-        </div>
+/* <section three> */
+.sec3{
+    width: 40%;
+    margin: auto;
+    height: 40vh;
+}
+.sub-sec3{
+    margin: 6vw 0 0 0;
+    text-align: center;
+    border: 3px solid #01326e;
+    border-radius: 15px 0 15px 0;
+    padding: 0.5rem 1rem 2rem 1rem;
+}
+.sub-sec3 h2, p{
+    color: #1c1451;
+    font-size: 1.5rem;
+    text-rendering: geometricprecision;
+    margin-bottom: 30px;
+}
+.email-link{
+    padding: 0.8rem;
+    background-color: #01326e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.email-link:hover{
+    background: #014fad;
+}
+@media screen and (max-width: 768px){
+  .sec3{
+    width: 65%;
+    margin: auto;
+    height: 40vh;
+}
+}
+/* section travel */
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer a{
+    text-decoration: none;
+    background-color: #cde4ff;
+    font-weight: 600;
+    color: #1c1451;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  footer{
+    margin: 0 0 0.8rem 0.5rem;
+  }
+}
+/* ----------icons------- */
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons a{
+  padding: 1rem;
+  color: #1c1451;
+}
+@media screen and (max-width: 768px) {
+  .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 0 1rem;
+  }
+}
+/* form */
+.contact{
+    padding: 0px 15%;
+    background-color: #cde4ff;
+    height: 50%;
+    width: 75%;
+    /* min-height: 50vh; */
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-form{
+  /* background: #1c1451; */
+  border-radius: 50px;
+  width: 90%;
+  padding: 2rem 6rem 3rem 6rem;
+  margin-top: 10px;
+}
+.contact-form h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.contact-form p{
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, 
+form textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #014fa9;
+    outline: none;
+    /* background-color: ; */
+    color: #0082e6;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 150px;
+}
+.contact-form form .btnn{
+    display: inline-block;
+    background: #150089;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 150px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.contact-form form .btnn:hover{
+    border: 2px solid #014fa9;
+    background: #cde4ff;
+    transform: scale(1.0);
+}
+@media (max-width: 760px){
+  .contact{
+    padding: 0px 15%;
+    background-color: #cde4ff;
+    height: 50%;
+    width: 100%;
+    /* min-height: 50vh; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-form h1{
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.contact-form p{
+  color: #07021c;
+  line-height: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 3.8rem;
+}
+}
 
-        <section class="about">
-            <div class="about-m">
-                <img src="mine.jpg">
-                <div class="sub-child">
-                    <h2>About Me</h2>
-                    <h5>Freelancer & Full stack Web-Developer</h5>
-                    <p>Hello! I'm Aisha a developer based in Kenya, Nairobi. I loves to code simply yet beautifully and I provide clean code. I take pleasure in every step of the web-development journey.
-                    I spend my free time reading, movies, walking as this is my favorite habit i'll walk everytime and anytime, i also sometimes blog here <a id="journey" href="https://medium.com/@aishashido" target="_blank"> my journey to programming.</b></a> 
-                    </p>
-                </div>
-            </div>
-        </section>
+
+/* -------------cards------------ */
+.service{
+  width: 100%;
+  /* height: 90vh; */
+  background: #b2dfff;
+  padding: 100px 0;
+}
+.service h1{
+  margin-bottom: 4%;
+  text-align: center;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.cardimg{
+  width: 300px;
+  height: 300px;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgb(0,0,0, 0.4);
+  transition: transform .4s ease-in-out;
+  object-fit: cover;
+}
+.cardimg{
+  transform: scale(1);
+
+}
+@media screen and (max-width: 800px){
+  .service{
+    width: 100%;
+    height: 200vh;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .cardimg{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* -----------about--------- */
+.about{
+  width: 100%;
+  padding: 70px 0;
+  background-color: #b1d5ff;
+}
+.about img{
+  width: 300px;
+  height: auto;
+}
+.sub-child{
+  width: 550px;
+}
+.about-m{
+  width: 1130px;
+  max-width: 95%;
+  max-width: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sub-child h2{
+  color: #000;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.sub-child h5{
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.sub-child p{
+  color: #000;
+  letter-spacing: 1px;
+  list-style: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 900px){
+  .about-m{
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-child{
+    text-align: center;
+    width: 500px;
+  }
+  .about img{
+    width: 300px;
+    height: auto;
+  }
+}
+
+/* ----------NAV BARS bitch---------- */
+
+nav{
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #020236;
+}
+.logo h3{
+  display: none;
+}
+.nav-links{
+  overflow: hidden;
+  display: flex;
+}
+.nav-links li{
+  list-style-type: none;
+  padding: 0.9rem;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav-links li a:hover{
+  color: #0082e6;
+}
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+  .nav-links{
+      width: 60%;
+  }   
+}
+
+@media screen and (max-width: 768px){
+  body{
+      overflow-x: hidden;
+  }
+  nav {
+    padding: 1rem;
+  }
+  .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      background-color: #020236;
+      top: 5vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform .5s ease-in;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .burger{
+      display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%) !important;
+  -webkit-transform: translateX(0%) !important;
+}
 
 
-<!-- <section two> -->
-        <!-- <section class="sec2">
-            <div class="sub-sec2">
-                <div class="mine">
-                <div>
-                <h1>About Me</h1>
-                <p>Hello! I'm Aisha a web-developer based in Kenya, Nairobi. I'm someone who loves to code simply yet beautifully, i take pleasure in every step of the web-development journey.</p>
-                </div>
-                <div id="myimage">
-                    <img src="me.jpg">
-                </div>
-                </div>
-                <p>I use;</p>
-                <div class="ul2">
-                    <ul>
-                        <li><a href="#">HML&CSS</a></li>
-                        <li><a href="#">Webflow</a></li>
-                        <li><a href="#">Shopify</a></li>
-                        <li><a href="#">Bootstrap</a></li>
-                    </ul>
-                </div>
-               <p>I spend my free time reading, movies, walking as this is my favorite habbit i'll walk everytime and anytime, i also sometimes blog here is <a id="journey" href="#">my journey</a> to programming.</p> 
-            </div>
-        </section> -->
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
 
-          <!---section two-->
-    
-          <section class="sec3">
-            <div class="sub-sec3">
-                <p>Want to work together or have any questions?</p>
-                <h2 id="sayhello">Get in touch</h2>
-                <a href="mailto:aishashido@gmail.com" class="email-link" target="_blank">Say Hello</a>
-            </div>
-        </section>
-        <!-- icons-->    
-        <div class="decoy">
-            <div class="icons">
-            <a href="https://twitter.com/__ayyshahh" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://github.com/ayyshahh1" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-        <footer>
-            <a href="#"><i class="fa-solid fa-copyright"></i></a>
-            <a href="#">Designed & Built by Aisha Mahamud</a>
-        </footer>
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
 
-    <!-- <section class="travel">
-     <div class="card1">
-        <div class="travel1">
-            <img src="./New folder/img4.jpg">
-        </div>
-        <caption>A random picture i took while i was in Bosaso, Somalia</caption>
-        </div>
-    </section> -->
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
 
-        <script src="nav.js"></script>
-</body>
-</html>
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
