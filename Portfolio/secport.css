@@ -1,4 +1,4 @@
-body{
+ body{
   font-family: Arial, Helvetica, sans-serif;
     /* font-family: 'Grandslang roman', sans-serif; */
     background-color: #cde4ff;
@@ -178,11 +178,11 @@ footer a{
   transform: scale(1.2s);
 }
 @media screen and (max-width: 768px) {
-  .icons{
+  .brand{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0 0 1rem;
+    margin: 3rem 0 0 1rem;
   }
 }
 /* form */
@@ -254,7 +254,7 @@ form textarea{
     background: #cde4ff;
     transform: scale(1.0);
 }
-@media (max-width: 760px){
+@media (max-width: 768px){
   .contact{
     padding: 0px 15%;
     background-color: #cde4ff;
@@ -284,8 +284,7 @@ form textarea{
 .service{
   width: 100%;
   /* height: 90vh; */
-  background: #b2dfff;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 .service h1{
   margin-bottom: 4%;
@@ -310,10 +309,11 @@ form textarea{
   transform: scale(1);
 
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
   .service{
     width: 100%;
-    height: 200vh;
+    height: 250vh;
+    padding: 40px 30px;
   }
   .cards{
     display: flex;
@@ -370,7 +370,12 @@ form textarea{
   font-size: 18px;
   margin-bottom: 45px;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
+  .about{
+    width: 100%;
+    padding: 50px 50px;
+    background-color: #b1d5ff;
+  }
   .about-m{
     display: flex;
     flex-direction: column;
@@ -387,6 +392,7 @@ form textarea{
 
 /* ----------NAV BARS bitch---------- */
 .topnav {
+  padding-left: 40px;
   overflow: hidden;
   background-color: #1c1451;
 }
@@ -405,16 +411,12 @@ form textarea{
   color: #cde4ff;
 }
 
-/* .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-} */
 
 .topnav .icon {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav a{display: none;}
   .topnav a.icon {
     float: right;
@@ -422,7 +424,7 @@ form textarea{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -437,120 +439,3 @@ form textarea{
 }
 
 
-/* nav{
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #020236;
-}
-.logo h3{
-  display: none;
-}
-.nav-links{
-  overflow: hidden;
-  display: flex;
-}
-.nav-links li{
-  list-style-type: none;
-  padding: 0.9rem;
-}
-.nav-links li a{
-  text-decoration: none;
-  color: #fff;
-}
-.nav-links li a:hover{
-  color: #0082e6;
-}
-.burger{
-  display: none;
-  cursor: pointer;
-}
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
-}
-
-@media screen and (max-width: 1024px){
-  .nav-links{
-      width: 60%;
-  }   
-}
-
-@media screen and (max-width: 768px){
-  body{
-      overflow-x: hidden;
-  }
-  nav {
-    padding: 1rem;
-  }
-  .nav-links{
-      position: absolute;
-      right: 0px;
-      height: 92vh;
-      background-color: #020236;
-      top: 5vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(100%);
-      transition: transform .5s ease-in;
-  }
-  .nav-links li{
-      opacity: 0;
-  }
-  .burger{
-      display: block;
-  }
-}
-
-.nav-active{
-  transform: translateX(0%) !important;
-  -webkit-transform: translateX(0%) !important;
-}
-
-
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-}
-
-.toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-  transform: rotate(45deg) translate(-5px, -6px);
-}
- */
