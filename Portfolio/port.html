@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,25 +9,15 @@
     <link rel="stylesheet" href="secport.css">
 </head>
 <body>      
-    <nav class="nav"> 
-        <div class="logo">
-            <h3>Aisha</h3>
-        </div>	
-
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="mailto:aishashido@gmail.com" target="_blank">Contact</a></li>
-        </ul>
-        
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-      </nav>
-        
+    <div class="topnav" id="myTopnav">
+        <a href="#home" target="_blank">About</a>
+        <a href="#" target="_blank">Travel</a>
+        <a href="#projects" target="_blank">Projects</a>
+        <a href="form.html" target="_blank">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
 <!---section one-->
         
@@ -43,7 +33,7 @@
         </section>
 
         <div class="service">
-            <h1>Projects</h1>
+            <h1 id="projects">Projects</h1>
                 <div class="cards">
                     <div class="card">
                         <a href="https://ayyshahh1.github.io/shido/okay%20ones/box/flexbox.html" target="_blank"><img class="cardimg" src="sky.jpg"></a>
@@ -118,15 +108,16 @@
             <a href="#">Designed & Built by Aisha Mahamud</a>
         </footer>
 
-    <!-- <section class="travel">
-     <div class="card1">
-        <div class="travel1">
-            <img src="./New folder/img4.jpg">
-        </div>
-        <caption>A random picture i took while i was in Bosaso, Somalia</caption>
-        </div>
-    </section> -->
-
-        <script src="nav.js"></script>
+         
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>
